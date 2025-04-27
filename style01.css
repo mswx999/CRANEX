@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #222222;    
+    background-color: #F0F9FF;
+}
+
+.navbar {
+    height: 20%px;
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    background-color: #005F73;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 5px solid #00AEEF;
+}
+
+.cranex {
+    background-image: url("images/cranex1.png");
+    height: 65px;
+    width: 220px;
+    background-size: cover;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+
+.subsec {
+    /* border: 2px solid white; */
+    height: 50px;
+    width: 130px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 590;
+    
+}
+
+.subsec:hover {
+    transition: 0.39s ease-in-out;
+    color: #00AEEF;
+}
+
+.content{
+    margin-left: 10%;
+    width: 80%;
+    height: 40%;
+    /* border: 2px solid rgb(11, 0, 0); */
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* background-color: #181818; */
+    background-image: url(images/hero.png);
+    background-size: cover;
+}
+
+.hero {
+    text-align: center;
+    font-size: 1.8rem; /* Increase size */
+    font-weight: 533; /* Medium weight */
+    color: #ffffff; /* Dark gray for better readability */
+    width: 70%;
+    height: 200px;
+    margin: 100px auto; /* Center it with spacing */
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.foot{
+    height: 20%px;
+    width: 100%;
+    padding: 7px 7px 7px 7px;
+    background-color: #181818;
+    color: #FFFFFF;
+    border-top: 5px solid #00AEEF;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Fade in effect for body */
+body {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+/* Fade-in keyframe animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.content2 {
+    width: 80%;
+    height: 80vh; /* 40% of viewport height */
+    /* margin: 20px auto; */
+    margin-left: 20.25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.blogs {
+    width: 80%;
+    height: 400px;
+    /* border: 2px dashed black; */
+    margin-left: 20.25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.faqs {
+    width: 80%;
+    height: 400px;
+    /* border: 2px dashed black; */
+    margin-left: 20.25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    animation: slide 9s infinite;
+}
+
+/* Animation for images */
+.slider img:nth-child(1) { animation-delay: 0s; }
+.slider img:nth-child(2) { animation-delay: 3s; }
+.slider img:nth-child(3) { animation-delay: 6s; }
+
+@keyframes slide {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.foot {
+    background-color: #181818;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links a, .footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #181818;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 100px; /* Adjust the size of the logo */
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.social-media {
+    margin-top: 15px;
+}
+
+.social-media a {
+    color: white;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.footer-bottom a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 5px;
+}

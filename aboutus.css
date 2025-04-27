@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #222222;    
+    background-color: #F0F9FF;
+}
+
+.navbar {
+    height: 20%px;
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    background-color: #005F73;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 5px solid #00AEEF;
+}
+
+.cranex {
+    background-image: url("images/cranex1.png");
+    height: 65px;
+    width: 220px;
+    background-size: cover;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+
+.subsec {
+    /* border: 2px solid white; */
+    height: 50px;
+    width: 130px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 590;
+    
+}
+
+.subsec:hover {
+    transition: 0.39s ease-in-out;
+    color: #00AEEF;
+}
+
+a{
+    text-decoration: none;
+}
+
+.subsec04{
+    color: #00AEEF;
+}
+body {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+/* Fade-in keyframe animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EAF6FF; /* Light background to match navbar */
+    color: #333;
+}
+
+/* About Us Container */
+.about-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Sections (Modern Cards) */
+.about-section {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 5px 15px rgba(0, 59, 91, 0.15); /* Soft blue shadow */
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.about-section:hover {
+    transform: translateY(-5px);
+}
+
+/* Headings */
+h2 {
+    color: #007BFF; /* Matching Navbar Theme */
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 15px;
+    }
+    .about-section {
+        padding: 20px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+.foot {
+    background-color: #181818;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links a, .footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #181818;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 100px; /* Adjust the size of the logo */
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.social-media {
+    margin-top: 15px;
+}
+
+.social-media a {
+    color: white;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.footer-bottom a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 5px;
+}
